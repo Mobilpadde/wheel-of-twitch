@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎡</text></svg>">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The real wheel makes the teal seal squeal</title>
+</head>
+
+<body>
+  <h1>
+    <picture>
+      <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f3a1/512.webp" type="image/webp">
+      <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f3a1/512.gif" alt="🎡" width="64" height="64">
+    </picture>
+    Wheel of Twitch
+    <picture>
+      <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f3a1/512.webp" type="image/webp">
+      <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f3a1/512.gif" alt="🎡" width="64" height="64">
+    </picture>
+  </h1>
+
+  <div id="wot">
+    <canvas id="wheel" width="700" height="700"></canvas>
+    <div id="spin">SPIN</div>
+  </div>
+
+
+  <div id="burger">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+      <path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"></path>
+    </svg>
+  </div>
+
+  <div id="settings">
+    <h2>Settings</h2>
+    <label>Entries:
+      <input type="number" id="entries" name="entries" min="1" value="2" required>
+    </label>
+
+    <label>
+      Channel:
+      <input type="text" id="channel" name="channel" value="wheelie_test" required>
+      <a id="ntfy" href="https://ntfy.sh/wheelie_test" target="_blank">ntfy</a>
+    </label>
+
+    <label>Default color:
+      <input type="color" id="color" name="color" value="#ffb703"></label>
+
+    <label>Message including:
+      <input type="text" id="including" name="including"></label>
+
+    <button id="save">Save</button>
+
+    <a href="https://github.com/Mobilpadde/wheel-of-twitch" id="github" target="_blank">Source</a>
+  </div>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
